@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="screen">
+                <input name="input" type="text" class="input">
+            </div>
+        <div class="keypad">
+            <div class="keys">
+                <div class="first-row-keys">
+                    <input type="button" class="key" value="7" onclick="display('7')">
+                    <input type="button" class="key" value="8" onclick="display('8')">
+                    <input type="button" class="key" value="9" onclick="display('9')">
+                    <input type="button" class="key" id="operator" value="÷" onclick="display('/')">
+                </div>
+                <div class="second-row-keys">
+                    <input type="button" class="key" value="4" onclick="display('4')">
+                    <input type="button" class="key" value="5" onclick="display('5')">
+                    <input type="button" class="key" value="6" onclick="display('6')">
+                    <input type="button" class="key" id="operator" value="x" onclick="display('*')">
+                </div>
+                <div class="third-row-keys">
+                    <input type="button" class="key" value="1"  onclick="display('1')">
+                    <input type="button" class="key" value="2" onclick="display('2')">
+                    <input type="button" class="key" value="3" onclick="display('3')">
+                    <input type="button" class="key" id="operator" value="-" onclick="display('-')">
+                </div>
+                <div class="fourth-row-keys">
+                    <input type="button" class="key" id="clear" value="C" onclick="clearScreen()">
+                    <input type="button" class="key" value="0" onclick="display('0')">
+                    <input type="button" class="key" id="equals" value="=" onclick="calculate()">
+                    <input type="button" class="key" id="operator" value="+" onclick="display('+')">
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
